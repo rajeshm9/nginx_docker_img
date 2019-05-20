@@ -1,0 +1,9 @@
+version: '3'
+services:
+  nginx:
+    container_name: nginx_rajeshm9
+    image: nginx_rajeshm9
+    build: .
+    ports:
+    - "5000:80"
+    command: [nginx-debug, '-g', 'daemon off;']

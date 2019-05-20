@@ -4,13 +4,17 @@ docker-compose build; docker-compose up
 Building nginx
 Step 1/3 : FROM nginx
  ---> 53f3fd8007f7
+ 
 Step 2/3 : COPY wwwroot /usr/share/nginx/html
  ---> Using cache
  ---> 923b2f98f23a
+ 
 Step 3/3 : COPY nginx.conf /etc/nginx/conf.d/default.conf
  ---> 823bcf1c880e
+ 
 Successfully built 823bcf1c880e
 Successfully tagged nginx_rajeshm9:latest
+
 Recreating nginx_rajeshm9 ... done
 Attaching to nginx_rajeshm9
 
